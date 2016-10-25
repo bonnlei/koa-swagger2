@@ -1,8 +1,8 @@
 {
   "name": "koa-swagger2",
   "description": "Document your koa rest api by jsDoc or yaml.",
-  "version": "1.1.1",
-  "author": "fliptoo <fliptoo.studio@gmail.com>, sposmen <sposmen@gmail.com>, eugene@takeaway.com, Sean Future <inbox@seanfuture.com>",
+  "version": "1.1.2",
+  "author": "fliptoo <fliptoo.studio@gmail.com>, sposmen <sposmen@gmail.com>, eugene@takeaway.com, Sean Future <inbox@seanfuture.com>, Lei Wang <wang.bonn@gmail.com",
   "main": "./index",
   "dependencies": {
     "async": "~0.2.7",
@@ -14,14 +14,17 @@
     "koa-route": "^2.4.2",
     "koa-static": "^2.0.0",
     "swagger-tools": "^0.9.5",
-    "underscore": "*"
+    "underscore": "*",
+    "swagger-ui": "2.1.4",
+    "replace": "^0.3.0",
+    "fs-extra": "^0.30.0"
   },
   "devDependencies": {
     "jshint": "*"
   },
   "scripts": {
     "test": "jshint --config jshint.cfg $(find . -name *.js | grep -v './node_modules')",
-    "postinstall": "bower install --allow-root"
+    "postinstall": "node ./bin/install-swagger.js"
   },
   "keywords": [
     "swagger",
@@ -34,5 +37,5 @@
     "coffee-script",
     "restful"
   ],
-  "repository": "git://github.com/seanfuture/koa-swagger2"
+  "repository": "git://github.com/bonnlei/koa-swagger2"
 }
