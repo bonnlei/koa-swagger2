@@ -25,7 +25,7 @@
   "scripts": {
     "test": "jshint --config jshint.cfg $(find . -name *.js | grep -v './node_modules')",
     "install-swagger": "node ./bin/install-swagger.js",
-    "postinstall": "node ./node-modules/koa-swagger2/bin/install-swagger.js"
+    "postinstall": "node ./bin/install-swagger.js"
   },
   "keywords": [
     "swagger",
