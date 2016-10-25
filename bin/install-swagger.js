@@ -10,7 +10,7 @@ try {
 
   replace({
     regex: '("api_key", key, "query")',
-    replacement: '("Authorization", "JWT " + key, "header")',
+    replacement: '"Authorization", "JWT " + key, "header"',
     paths: [path.join('./public/swagger/index.html')],
     recursive: false,
     silent: true
