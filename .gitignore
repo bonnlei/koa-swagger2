@@ -2,3 +2,5 @@
 node_modules/
 .DS_Store
 /nbproject/private/
+koa-swagger2.iml
+public/
